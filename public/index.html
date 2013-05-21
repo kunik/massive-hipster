@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>SocketIO client</title>
+</head>
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:5203');
+  socket.on('message', function(data) {
+    console.log(data);
+  });
+
+  function GET(url) {
+    socket.send(JSON.stringify([url]))
+  }
+
+  function POST(url, data) {
+    socket.send(JSON.stringify([url, data]));
+  }
+</script>
+
+</body>
+</html>

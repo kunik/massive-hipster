@@ -1,13 +1,14 @@
 {
   "author": "Taras Kunch <tkunch@rebbix.com>",
-  "name": "node-proxy",
+  "name": "node-api-proxy",
   "description": "Flash socket to http nodejs proxy",
   "version": "0.0.1",
   "repository": {
     "url": ""
   },
   "dependencies": {
-    "socket.io": "*"
+    "socket.io": "*",
+    "underscore": "*"
   },
   "devDependencies": {},
   "optionalDependencies": {},
