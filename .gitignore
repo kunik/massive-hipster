@@ -1,0 +1,4 @@
+*.sw[pon]
+.idea
+node_modules
+
